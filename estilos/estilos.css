@@ -1,0 +1,779 @@
+/*MOBILE - SMARTPHONE*/
+
+/* ------------------------ Generales ------------------------ */
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(248, 230, 156);
+
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 60px;
+
+}
+
+
+h2,
+h4,
+h5 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+
+}
+
+/* ------------------------ Header ------------------------ */
+
+header {
+    color: black;
+    background-color: rgb(253, 177, 45);
+    width: 100fx;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logoHeader {
+    width: 100%;
+    text-align: center;
+}
+
+#imgLogo {
+    width: 35%;
+}
+
+nav {
+    width: 100%;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+
+/* ------------------------ Main ------------------------ */
+
+#dataMaison {
+    text-align: center;
+
+}
+
+#textImg {
+    font-style: italic;
+    font-size: 20px;
+}
+
+#imgDataMaison {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px 2px 3px black;
+}
+
+
+
+#menu {
+    width: 60%;
+    margin-top: 30px;
+    border: 2px solid black;
+    box-shadow: 4px 2px 3px grey;
+}
+
+
+#menuDeldia {
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+p {
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+
+}
+
+figcaption {
+
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+
+}
+
+.figcaptionStyle {
+    color: white;
+
+}
+
+.comidasDestacadas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.imgComidas {
+    margin: 20px;
+    width: 60%;
+    text-align: center;
+}
+
+.imgComidas img {
+    width: 70%;
+    box-shadow: 4px 2px 3px white;
+}
+
+/* ------------------------ Otra Sección ------------------------ */
+
+#dataExperiencia {
+    height: auto;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#servicios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.serviciosFig {
+    margin: 25px auto;
+}
+
+#experiencias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.imgExperiencias {
+    text-align: center;
+    font-family: 'Font Awesome 6 Brands';
+
+}
+
+/* ------------------------ Footer ------------------------ */
+
+.footerContainer {
+    color: black;
+    font-weight: bold;
+    background-color: rgb(253, 177, 45);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+
+.footerTexto {
+    width: 100%;
+    font-size: 12px;
+}
+
+
+.footerSocial {
+    width: 100%;
+    gap: 20px;
+    font-size: x-large;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*Declarar areas*/
+
+
+header {
+    grid-area: header;
+}
+
+section#galeria {
+    grid-area: galeria;
+}
+
+main {
+    grid-area: main;
+    text-align: center;
+}
+
+aside {
+    grid-area: aside;
+    background-color: brown;
+
+}
+
+
+footer {
+    grid-area: footer;
+}
+
+#grilla {
+    width: 100%;
+    height: 200vh;
+    display: grid;
+    grid-template-areas:
+        "header"
+        "galeria"
+        "main"
+        "aside"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 240px 1fr 1fr 1fr 100px;
+}
+
+
+
+/*MOBILE - TABLET*/
+
+@media (min-width: 768px) {
+
+    #grilla {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "galeria galeria"
+            "main aside"
+            "footer footer";
+        grid-template-columns: 70% auto;
+        grid-template-rows: 120px 2fr 1fr 100px;
+    }
+
+    /* ------------------------ Header ------------------------ */
+
+    header {
+        color: black;
+        background-color: rgb(253, 177, 45);
+        height: 120px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #logoHeader {
+        width: 49%;
+
+    }
+
+    #imgLogo {
+        width: 35%;
+    }
+
+    nav {
+        width: 49%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        list-style: none;
+
+    }
+
+    nav ul li a:hover {
+        color: white;
+    }
+
+    /* ------------------------ Main ------------------------ */
+
+    #dataMaison {
+        text-align: center;
+
+    }
+
+    #textImg {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    #imgDataMaison {
+        width: 100%;
+        height: auto;
+        box-shadow: 4px 2px 3px black;
+    }
+
+
+
+    #menu {
+        width: 65%;
+        margin-top: 30px;
+        border: 2px solid black;
+        box-shadow: 4px 2px 3px grey;
+    }
+
+
+    #menuDeldia {
+        color: black;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    p {
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+
+    }
+
+    figcaption {
+
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+
+    }
+
+    .figcaptionStyle {
+        color: white;
+    }
+
+    .comidasDestacadas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .imgComidas {
+        margin: 20px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .imgComidas img {
+        width: 100%;
+        box-shadow: 4px 2px 3px white;
+    }
+
+    /* ------------------------ Otra Sección ------------------------ */
+
+    #dataExperiencia {
+        height: auto;
+        width: 100%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #servicios {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .serviciosFig {
+        margin: 25px auto;
+    }
+
+    #experiencias {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .imgExperiencias {
+        text-align: center;
+        font-family: 'Font Awesome 6 Brands';
+
+    }
+
+    /* ------------------------ Footer ------------------------ */
+
+    .footerContainer {
+        color: black;
+        font-weight: bold;
+        background-color: rgb(253, 177, 45);
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+
+    }
+
+
+    .footerTexto {
+        width: 49%;
+        align-self: center;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+
+    .footerSocial {
+        width: 49%;
+        display: flex;
+        gap: 30px;
+        font-size: x-large;
+        justify-content: flex-end;
+    }
+
+}
+
+
+/*DESKTOP*/
+
+/* ------------------------ Generales ------------------------ */
+
+@media (min-width: 1024px) {
+
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
+
+    html {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+        background-color: rgb(248, 230, 156);
+
+    }
+
+    h1 {
+        color: black;
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        margin-top: 60px;
+
+    }
+
+
+    h2,
+    h4,
+    h5 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: black;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        font-family: serif;
+        font-style: italic;
+    }
+
+    h3 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: white;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+        font-family: serif;
+        font-style: italic;
+
+    }
+
+    /* ------------------------ Header ------------------------ */
+
+    header {
+        color: black;
+        background-color: rgb(253, 177, 45);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    #logoHeader {
+        width: 49%;
+    }
+
+    #imgLogo {
+        width: 35%;
+    }
+
+    nav {
+        width: 49%;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a:hover {
+        color: white;
+    }
+
+    /* ------------------------ Main ------------------------ */
+
+    #dataMaison {
+        text-align: center;
+    }
+
+    #textImg {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    #imgDataMaison {
+        width: 100%;
+        height: auto;
+        box-shadow: 4px 2px 3px black;
+    }
+
+
+
+    #menu {
+        width: 350px;
+        margin-top: 30px;
+        border: 2px solid black;
+        box-shadow: 4px 2px 3px grey;
+    }
+
+
+    #menuDeldia {
+        color: black;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+
+
+    a {
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+    }
+
+    p {
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+
+    }
+
+    figcaption {
+
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+
+    }
+
+    .figcaptionStyle {
+        color: white;
+    }
+
+    .comidasDestacadas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .imgComidas {
+        margin: 20px;
+        width: 200px;
+        border: 1px solid white;
+        text-align: center;
+    }
+
+    .imgComidas img {
+        width: 200px;
+    }
+
+    /* ------------------------ Otra Sección ------------------------ */
+
+    #dataExperiencia {
+        height: auto;
+        width: 600px;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #servicios {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .serviciosFig {
+        margin: 25px auto;
+    }
+
+    #experiencias {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .imgExperiencias {
+        text-align: center;
+        font-family: 'Font Awesome 6 Brands';
+
+    }
+
+    /* ------------------------ Footer ------------------------ */
+
+    .footerContainer {
+        color: black;
+        font-weight: bold;
+        background-color: rgb(253, 177, 45);
+        height: 80px;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .footerTexto {
+        width: 49%;
+        font-size: 15px;
+    }
+
+
+    .footerSocial {
+        width: 49%;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+        font-size: x-large;
+    }
+
+    /*Declarar areas*/
+
+    #grilla {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas:
+            "header header"
+            "galeria galeria"
+            "main aside"
+            "footer footer";
+        grid-template-columns: 75% auto;
+        grid-template-rows: 120px 2fr 1fr 100px;
+    }
+
+    header {
+        grid-area: header;
+    }
+
+    section#galeria {
+        grid-area: galeria;
+    }
+
+    main {
+        grid-area: main;
+        text-align: center;
+    }
+
+    aside {
+        grid-area: aside;
+        background-color: brown;
+
+    }
+
+
+    footer {
+        grid-area: footer;
+    }
+
+}
