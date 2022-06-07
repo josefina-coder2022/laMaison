@@ -57,7 +57,7 @@ h3 {
 
 header {
     color: black;
-    background-color: rgb(253, 177, 45);
+    background-image: linear-gradient(orange, yellow);
     width: 100fx;
     height: 240px;
     display: flex;
@@ -91,6 +91,15 @@ nav ul li {
 
 nav ul li a:hover {
     color: white;
+}
+
+#galeria {
+    text-align: center;
+}
+
+#imgenCarta {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -221,7 +230,7 @@ figcaption {
 .footerContainer {
     color: black;
     font-weight: bold;
-    background-color: rgb(253, 177, 45);
+    background-image: linear-gradient(orange, yellow);
     width: 100%;
     height: 80px;
     display: flex;
@@ -308,7 +317,7 @@ footer {
 
     header {
         color: black;
-        background-color: rgb(253, 177, 45);
+        background-image: linear-gradient(orange, yellow);
         height: 120px;
         display: flex;
         flex-direction: row;
@@ -470,7 +479,7 @@ footer {
     .footerContainer {
         color: black;
         font-weight: bold;
-        background-color: rgb(253, 177, 45);
+        background-image: linear-gradient(orange, yellow);
         width: 100%;
         height: 60px;
         display: flex;
@@ -516,7 +525,7 @@ footer {
     }
 
     body {
-        background-color: rgb(248, 230, 156);
+        background-color: rgb(255, 255, 253);
 
     }
 
@@ -531,6 +540,7 @@ footer {
 
 
     h2,
+    h3,
     h4,
     h5 {
         margin-top: 30px;
@@ -543,23 +553,12 @@ footer {
         font-style: italic;
     }
 
-    h3 {
-        margin-top: 30px;
-        margin-bottom: 20px;
-        color: white;
-        font-weight: bold;
-        font-size: 25px;
-        text-align: center;
-        font-family: serif;
-        font-style: italic;
-
-    }
 
     /* ------------------------ Header ------------------------ */
 
     header {
         color: black;
-        background-color: rgb(253, 177, 45);
+        background-image: linear-gradient(grey, white);
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -589,6 +588,10 @@ footer {
 
     nav ul li a:hover {
         color: white;
+        font-size: large;
+        transform: scale(5);
+        transition-property: all;
+        transition-duration: 4s;
     }
 
     /* ------------------------ Main ------------------------ */
@@ -615,6 +618,8 @@ footer {
         margin-top: 30px;
         border: 2px solid black;
         box-shadow: 4px 2px 3px grey;
+
+
     }
 
 
@@ -649,7 +654,7 @@ footer {
     }
 
     .figcaptionStyle {
-        color: white;
+        color: black;
     }
 
     .comidasDestacadas {
@@ -663,12 +668,57 @@ footer {
     .imgComidas {
         margin: 20px;
         width: 200px;
-        border: 1px solid white;
+        border: 1px solid black;
         text-align: center;
     }
 
     .imgComidas img {
         width: 200px;
+    }
+
+    #eventos {
+        width: 100%;
+        height: auto;
+        box-shadow: 4px 2px 3px black;
+
+    }
+
+    .parrafoEventos {
+        text-align: center;
+        margin-top: 15px;
+        font-weight: bold;
+        font-family: serif;
+        font-style: italic;
+        font-size: 25px;
+    }
+
+    .listaEventos {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 20px;
+        list-style-type: circle;
+
+    }
+
+
+    #imagenNosotros {
+        width: 100%;
+        height: auto;
+        box-shadow: 4px 2px 3px black;
+
+    }
+
+    .parrafoNosotros {
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+        font-family: serif;
+        font-style: italic;
+        font-size: 20px;
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     /* ------------------------ Otra Sección ------------------------ */
@@ -711,12 +761,27 @@ footer {
 
     }
 
+    #imagenCarta {
+        width: 100%;
+        height: auto;
+        box-shadow: 4px 2px 3px black;
+        transition: transform .2s;
+    }
+
+    #imagenCarta:hover {
+        -ms-transform: scale(1.5);
+        /* IE 9 */
+        -webkit-transform: scale(1.5);
+        /* Safari 3-8 */
+        transform: scale(1.5);
+    }
+
     /* ------------------------ Footer ------------------------ */
 
     .footerContainer {
         color: black;
         font-weight: bold;
-        background-color: rgb(253, 177, 45);
+        background-image: linear-gradient(rgb(219, 213, 213), white);
         height: 80px;
         display: flex;
         flex-direction: row;
@@ -767,7 +832,7 @@ footer {
 
     aside {
         grid-area: aside;
-        background-color: brown;
+        background-color: rgb(253, 200, 218);
 
     }
 
