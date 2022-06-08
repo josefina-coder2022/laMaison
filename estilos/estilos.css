@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: rgb(248, 230, 156);
+    background-color: rgb(255, 255, 253);
 
 }
 
@@ -29,6 +29,7 @@ h1 {
 
 
 h2,
+h3,
 h4,
 h5 {
     margin-top: 30px;
@@ -41,23 +42,13 @@ h5 {
     font-style: italic;
 }
 
-h3 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-    font-family: serif;
-    font-style: italic;
 
-}
 
 /* ------------------------ Header ------------------------ */
 
 header {
     color: black;
-    background-image: linear-gradient(orange, yellow);
+    background-image: linear-gradient(grey, white);
     width: 100fx;
     height: 240px;
     display: flex;
@@ -89,8 +80,13 @@ nav ul li {
     list-style: none;
 }
 
+
 nav ul li a:hover {
     color: white;
+    font-size: large;
+    transform: scale(5);
+    transition-property: all;
+    transition-duration: 4s;
 }
 
 #galeria {
@@ -100,6 +96,7 @@ nav ul li a:hover {
 #imgenCarta {
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 70%;
 }
 
 
@@ -162,7 +159,7 @@ figcaption {
 }
 
 .figcaptionStyle {
-    color: white;
+    color: black;
 
 }
 
@@ -184,6 +181,7 @@ figcaption {
     width: 70%;
     box-shadow: 4px 2px 3px white;
 }
+
 
 /* ------------------------ Otra Sección ------------------------ */
 
@@ -225,12 +223,41 @@ figcaption {
 
 }
 
+.parrafoNosotros {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: serif;
+    font-style: italic;
+    font-size: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.listaEventos {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    list-style-type: circle;
+
+}
+
+.figcaptionCarta {
+    font-family: serif;
+    font-style: italic;
+    font-size: 35px;
+    margin-top: 30px;
+    font-style: italic;
+}
+
 /* ------------------------ Footer ------------------------ */
 
 .footerContainer {
     color: black;
     font-weight: bold;
-    background-image: linear-gradient(orange, yellow);
+    background-image: linear-gradient(rgb(219, 213, 213), white);
     width: 100%;
     height: 80px;
     display: flex;
@@ -271,7 +298,8 @@ main {
 
 aside {
     grid-area: aside;
-    background-color: brown;
+    background-color: rgb(250, 181, 204);
+
 
 }
 
@@ -317,7 +345,7 @@ footer {
 
     header {
         color: black;
-        background-image: linear-gradient(orange, yellow);
+        background-image: linear-gradient(grey, white);
         height: 120px;
         display: flex;
         flex-direction: row;
@@ -350,6 +378,10 @@ footer {
 
     nav ul li a:hover {
         color: white;
+        font-size: large;
+        transform: scale(5);
+        transition-property: all;
+        transition-duration: 4s;
     }
 
     /* ------------------------ Main ------------------------ */
@@ -411,7 +443,7 @@ footer {
     }
 
     .figcaptionStyle {
-        color: white;
+        color: black;
     }
 
     .comidasDestacadas {
@@ -426,6 +458,7 @@ footer {
     .imgComidas {
         margin: 20px;
         width: 70%;
+        text-align: center;
         text-align: center;
     }
 
@@ -474,12 +507,18 @@ footer {
 
     }
 
+    #imgenCarta {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 70%;
+    }
+
     /* ------------------------ Footer ------------------------ */
 
     .footerContainer {
         color: black;
         font-weight: bold;
-        background-image: linear-gradient(orange, yellow);
+        background-image: linear-gradient(rgb(219, 213, 213), white);
         width: 100%;
         height: 60px;
         display: flex;
@@ -668,7 +707,6 @@ footer {
     .imgComidas {
         margin: 20px;
         width: 200px;
-        border: 1px solid black;
         text-align: center;
     }
 
@@ -721,6 +759,23 @@ footer {
         margin-right: auto;
     }
 
+    .figcaptionCarta {
+        font-family: serif;
+        font-style: italic;
+        font-size: 35px;
+        margin-top: 30px;
+        font-style: italic;
+    }
+
+    .bordeLista {
+
+        padding: 10px;
+
+    }
+
+
+
+
     /* ------------------------ Otra Sección ------------------------ */
 
     #dataExperiencia {
@@ -761,20 +816,18 @@ footer {
 
     }
 
-    #imagenCarta {
-        width: 100%;
+    #imgenCarta {
         height: auto;
         box-shadow: 4px 2px 3px black;
-        transition: transform .2s;
+        -webkit-transition: 0.4s ease;
+        transition: 0.4s ease;
     }
 
-    #imagenCarta:hover {
-        -ms-transform: scale(1.5);
-        /* IE 9 */
+    #imgenCarta:hover {
         -webkit-transform: scale(1.5);
-        /* Safari 3-8 */
         transform: scale(1.5);
     }
+
 
     /* ------------------------ Footer ------------------------ */
 
@@ -832,7 +885,7 @@ footer {
 
     aside {
         grid-area: aside;
-        background-color: rgb(253, 200, 218);
+        background-color: rgb(250, 181, 204);
 
     }
 
