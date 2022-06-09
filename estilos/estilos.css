@@ -322,6 +322,14 @@ footer {
     grid-template-rows: 240px 1fr 1fr 1fr 100px;
 }
 
+ #formularioContainer {
+     width: 70%;
+     margin-top: 60px;
+     margin-right: auto;
+     margin-left: auto;
+     margin-bottom: 30px;
+ }
+
 
 
 /*MOBILE - TABLET*/
@@ -513,6 +521,7 @@ footer {
         width: 70%;
     }
 
+
     /* ------------------------ Footer ------------------------ */
 
     .footerContainer {
@@ -634,6 +643,10 @@ footer {
     }
 
     /* ------------------------ Main ------------------------ */
+
+    .container{
+        margin-top: 30px;
+    }
 
     #dataMaison {
         text-align: center;
@@ -819,13 +832,15 @@ footer {
     #imgenCarta {
         height: auto;
         box-shadow: 4px 2px 3px black;
-        -webkit-transition: 0.4s ease;
-        transition: 0.4s ease;
+
     }
 
-    #imgenCarta:hover {
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5);
+    #formularioContainer {
+        width: 70%;
+        margin-top: 60px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
     }
 
 
