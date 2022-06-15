@@ -5,67 +5,120 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../estilos/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../estilos/style.css">
+
   <script src="https://kit.fontawesome.com/e849a0b79d.js" crossorigin="anonymous"></script>
-  <title>Mi sitio web</title>
+  <title>LaMeson</title>
 </head>
 
 <body>
 
   <header>
 
-     <div id="logoHeader">
-       <a href="../index.html">
-         <img src="../imagenes/logo.png" />
-       </a>
-     </div>
+    <div id="logoHeader">
+      <a href="../index.html">
+        <img src="../imagenes/logo.png" />
+      </a>
+    </div>
 
-     <nav>
-       <ul>
-         <li>
-           <a href="../index.html">Inicio</a>
-         </li>
+    <nav>
+      <ul>
+        <li>
+          <a href="../index.html">Inicio</a>
+        </li>
 
-         <li>
-           <a href="carta.html">Carta</a>
-         </li>
+        <li>
+          <a href="carta.html">Carta</a>
+        </li>
 
-         <li>
-           <a href="eventos.html">Eventos</a>
-         </li>
+        <li>
+          <a href="eventos.html">Eventos</a>
+        </li>
 
-         <li>
-           <a href="nosotros.html">Nosotros</a>
-         </li>
+        <li>
+          <a href="nosotros.html">Nosotros</a>
+        </li>
 
-         <li>
-           <a href="contacto.html">Contacto</a>
-         </li>
+        <li>
+          <a href="contacto.html">Contacto</a>
+        </li>
 
-       </ul>
+      </ul>
 
-     </nav>
+    </nav>
 
   </header>
 
   <main>
 
-  <figure>
-    <img id="imgDataMaison" src="../imagenes/imagenEvento.jpg" alt="imagen de Eventos">
-  </figure>
+    <figure>
+      <img id="imgDataMaison" src="../imagenes/imagenEvento.jpg" alt="imagen de Eventos">
+    </figure>
 
-  <p class="parrafoEventos">Te ofrecemos un servicio innovador manteniendo los clásicos sabores de siempre</P>
-  <p class="parrafoEventos">Combinamos sabores clásicos y tradicionales con lo moderno</p>
+    <p class="parrafoEventos">Te ofrecemos un servicio innovador manteniendo los clásicos sabores de siempre</P>
+    <p class="parrafoEventos">Combinamos sabores clásicos y tradicionales con lo moderno</p>
 
-  <ul class="listaEventos">
+    <section class="listaEventos">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h1 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Servicio integral y personalizado
+            </button>
+          </h1>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Desde hace más de 30 años brindamos servicio de catering para la realización de eventos sociales y
+              corporativos. Nuestra experiencia y trayectoria nos permiten brindar una solución integral adaptada a la
+              necesidad y estilo de cada cliente, tanto en el aspecto gastronómico, como en el asesoramiento,
+              organización y coordinación del evento. Para ello contamos con personal capacitado para mantener la misma
+              calidad de siempre, conservando así, aquellos sabores clásicos y tradicionales, entendiendo el paso del
+              tiempo como la oportunidad de ofrecer un servicio innovador de primer nivel, creando experiencias
+              personalizadas de manera profesional y creativa.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h1 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Sabores clásicos y tradicionales
+            </button>
+          </h1>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Somos una empresa joven, fresca y especializada en la calidad. Nuestro concepto es fuerte y firme al igual
+              que nuestro compromiso con la sociedad y el ambiente. Utilizamos ingredientes seleccionados de los mejores
+              proveedores. Nuestra masa es suave y ligera por sus 72 hs. de leudado, con bordes suaves y crujientes.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h1 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Calidad con una ética innovadora
+            </button>
+          </h1>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              ¿Nuestro secreto? Es el ingrediente más importante, nuestra base para hacer todo lo que hacemos, el AMOR y
+              la PASIÓN.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <li class="bordeLista">Servicio integral y personalizado</li>
-    <li class="bordeLista">Sabores clásicos y tradicionales</li>
-    <li class="bordeLista">Calidad con una ética innovadora</li>
 
-  </ul>
-  
-</main>
+
+  </main>
 
 
   <footer class="footerContainer">
@@ -90,7 +143,11 @@
 
     </div>
 
+
   </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
 </body>
 

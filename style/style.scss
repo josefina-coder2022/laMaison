@@ -1,15 +1,9 @@
-/*MOBILE - SMARTPHONE*/
 
-/* ------------------------ Generales ------------------------ */
+@import "generales";
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Poppins:wght@300&family=Raleway:wght@300&display=swap');
-
-
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
 
 html {
     font-family: 'Raleway', sans-serif;
@@ -80,9 +74,16 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    color: red;
 }
 
+
+nav ul li a:hover {
+    color: white;
+    font-size: large;
+    transform: scale(5);
+    transition-property: all;
+    transition-duration: 4s;
+}
 
 #galeria {
     text-align: center;
@@ -376,7 +377,15 @@ footer {
 
     nav ul li {
         list-style: none;
-        color: red;
+
+    }
+
+    nav ul li a:hover {
+        color: white;
+        font-size: large;
+        transform: scale(5);
+        transition-property: all;
+        transition-duration: 4s;
     }
 
     /* ------------------------ Main ------------------------ */
@@ -619,7 +628,14 @@ footer {
 
     nav ul li {
         list-style: none;
-        color: red;
+    }
+
+    nav ul li a:hover {
+        color: white;
+        font-size: large;
+        transform: scale(5);
+        transition-property: all;
+        transition-duration: 4s;
     }
 
     /* ------------------------ Main ------------------------ */
@@ -833,7 +849,6 @@ footer {
         height: 80px;
         display: flex;
         flex-direction: row;
-       
     }
 
 
