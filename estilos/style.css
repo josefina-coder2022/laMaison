@@ -1,6 +1,47 @@
 @charset "UTF-8";
+/*MOBILE - SMARTPHONE*/
+/* ------------------------ Generales ------------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Poppins:wght@300&family=Raleway:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@600&family=Poppins:wght@300&family=Raleway:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #fffffd;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  font-family: serif;
+  font-style: italic;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -33,10 +74,10 @@ header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -46,161 +87,14 @@ header nav ul li {
   list-style: none;
 }
 
-header nav ul li a:hover {
+header nav ul li:hover {
   color: white;
-  font-size: large;
-  -webkit-transform: scale(5);
-          transform: scale(5);
+  -webkit-transform: scale 5;
+          transform: scale 5;
   -webkit-transition-property: all;
   transition-property: all;
-  -webkit-transition-duration: 4s;
-          transition-duration: 4s;
-}
-
-header #logoHeader {
-  width: 100%;
-  text-align: center;
-}
-
-/*
-@media (min-width: $tablet) {
-
-    #grilla {
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-areas:
-            "header header"
-            "galeria galeria"
-            "main aside"
-            "footer footer";
-        grid-template-columns: 70% auto;
-        grid-template-rows: 120px 2fr 1fr 100px;
-    }
-
-    header {
-        color: black;
-        background-image: linear-gradient(grey, white);
-        height: 120px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        nav {
-            width: 49%;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-
-                li {
-                    list-style: none;
-
-                    a:hover {
-                        color: white;
-                        font-size: large;
-                        transform: scale(5);
-                        transition-property: all;
-                        transition-duration: 4s;
-                    }
-
-                }
-            }
-        }
-    }
-
-    #logoHeader {
-        width: 49%;
-
-    }
-
-}
-
-@media (min-width: $desktop) {
-
-    header {
-        color: black;
-        background-image: linear-gradient(grey, white);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        nav {
-            width: 49%;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-                li {
-                    list-style: none;
-
-                    a:hover {
-                        color: white;
-                        font-size: large;
-                        transform: scale(5);
-                        transition-property: all;
-                        transition-duration: 4s;
-                    }
-                }
-            }
-        }
-    }
-
-    #logoHeader {
-        width: 49%;
-    }
-
-}*/
-html {
-  font-family: 'Raleway', sans-serif;
-}
-
-body {
-  background-color: #fffffd;
-}
-
-h1 {
-  color: black;
-  text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  margin-top: 60px;
-}
-
-h2,
-h3,
-h4,
-h5 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  color: black;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
-  font-family: serif;
-  font-style: italic;
-}
-
-/* ------------------------ Header ------------------------ */
-header {
-  color: black;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(white));
-  background-image: linear-gradient(grey, white);
-  width: 100fx;
-  height: 240px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
 }
 
 #logoHeader {
@@ -208,16 +102,18 @@ header {
   text-align: center;
 }
 
-#imgLogo {
-  width: 35%;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-nav {
+.footerContainer {
+  color: black;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#dbd5d5), to(white));
+  background-image: linear-gradient(#dbd5d5, white);
   width: 100%;
-  margin-top: 10px;
-}
-
-nav ul {
+  height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,23 +126,70 @@ nav ul {
           align-items: center;
 }
 
-nav ul li {
-  list-style: none;
+.footerContainer .footerTexto {
+  width: 100%;
+  font-size: 12px;
 }
 
-nav ul li a:hover {
-  color: white;
-  font-size: large;
-  -webkit-transform: scale(5);
-          transform: scale(5);
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-duration: 4s;
-          transition-duration: 4s;
+.footerContainer .footerTexto .footerSocial {
+  width: 100%;
+  gap: 20px;
+  font-size: x-large;
+  text-align: center;
+  margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+  .footerContainer {
+    height: 60px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footerContainer .footerTexto {
+    width: 49%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .footerContainer .footerTexto .footerSocial {
+    width: 49%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerContainer {
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footerContainer .footerTexto .footerSocial {
+    gap: 20px;
+    font-size: x-large;
+  }
+}
+
+/* ------------------------ Header ------------------------ */
 #galeria {
   text-align: center;
+}
+
+#galeria #imgDataMaison {
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 4px 2px 3px black;
+          box-shadow: 4px 2px 3px black;
 }
 
 #imgenCarta {
@@ -265,14 +208,7 @@ nav ul li a:hover {
   font-size: 20px;
 }
 
-#imgDataMaison {
-  width: 100%;
-  height: auto;
-  -webkit-box-shadow: 4px 2px 3px black;
-          box-shadow: 4px 2px 3px black;
-}
-
-#menu {
+main #menu {
   width: 60%;
   margin-top: 30px;
   border: 2px solid black;
@@ -280,10 +216,36 @@ nav ul li a:hover {
           box-shadow: 4px 2px 3px grey;
 }
 
-#menuDeldia {
+main #menuDeldia {
   color: black;
   font-weight: bold;
   margin-top: 20px;
+}
+
+main #servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+main #servicios .imgExperiencias {
+  text-align: center;
+  font-family: 'Font Awesome 6 Brands';
+}
+
+main #servicios .imgExperiencias .serviciosFig {
+  margin: 25px auto;
 }
 
 a {
@@ -352,27 +314,6 @@ figcaption {
           flex-direction: row;
 }
 
-#servicios {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 50px;
-}
-
-.serviciosFig {
-  margin: 25px auto;
-}
-
 #experiencias {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,11 +329,6 @@ figcaption {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 50px;
-}
-
-.imgExperiencias {
-  text-align: center;
-  font-family: 'Font Awesome 6 Brands';
 }
 
 .parrafoNosotros {
@@ -524,34 +460,16 @@ footer {
   }
   /* ------------------------ Header ------------------------ */
   header {
-    color: black;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(white));
-    background-image: linear-gradient(grey, white);
     height: 120px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
   }
-  #logoHeader {
+  header nav {
     width: 49%;
   }
-  #imgLogo {
-    width: 35%;
-  }
-  nav {
-    width: 49%;
-  }
-  nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  header nav ul {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -559,18 +477,11 @@ footer {
     -ms-flex-pack: distribute;
         justify-content: space-around;
   }
-  nav ul li {
-    list-style: none;
+  #logoHeader {
+    width: 49%;
   }
-  nav ul li a:hover {
-    color: white;
-    font-size: large;
-    -webkit-transform: scale(5);
-            transform: scale(5);
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 4s;
-            transition-duration: 4s;
+  #imgLogo {
+    width: 35%;
   }
   /* ------------------------ Main ------------------------ */
   #dataMaison {
@@ -657,7 +568,7 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #servicios {
+  main #servicios {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -673,7 +584,11 @@ footer {
     margin-right: auto;
     margin-bottom: 50px;
   }
-  .serviciosFig {
+  main #servicios .imgExperiencias {
+    text-align: center;
+    font-family: 'Font Awesome 6 Brands';
+  }
+  main #servicios .imgExperiencias .serviciosFig {
     margin: 25px auto;
   }
   #experiencias {
@@ -691,10 +606,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-  }
-  .imgExperiencias {
-    text-align: center;
-    font-family: 'Font Awesome 6 Brands';
   }
   #imgenCarta {
     margin-top: 30px;
@@ -741,85 +652,14 @@ footer {
 /*DESKTOP*/
 /* ------------------------ Generales ------------------------ */
 @media (min-width: 1024px) {
-  * {
-    padding: 0px;
-    margin: 0px;
-  }
-  html {
-    font-family: 'Raleway', sans-serif;
-  }
-  body {
-    background-color: #fffffd;
-  }
-  h1 {
-    color: black;
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    margin-top: 60px;
-  }
-  h2,
-  h3,
-  h4,
-  h5 {
-    margin-top: 30px;
-    margin-bottom: 20px;
-    color: black;
-    font-weight: bold;
-    font-size: 25px;
-    text-align: center;
-    font-family: serif;
-    font-style: italic;
-  }
   /* ------------------------ Header ------------------------ */
-  header {
-    color: black;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(grey), to(white));
-    background-image: linear-gradient(grey, white);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #logoHeader {
-    width: 49%;
-  }
-  #imgLogo {
-    width: 35%;
-  }
-  nav {
-    width: 49%;
-  }
-  nav ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+  header nav ul {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  nav ul li {
-    list-style: none;
-  }
-  nav ul li a:hover {
-    color: white;
-    font-size: large;
-    -webkit-transform: scale(5);
-            transform: scale(5);
-    -webkit-transition-property: all;
-    transition-property: all;
-    -webkit-transition-duration: 4s;
-            transition-duration: 4s;
+  #logoHeader {
+    width: 49%;
   }
   /* ------------------------ Main ------------------------ */
   .container {
@@ -954,7 +794,7 @@ footer {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  #servicios {
+  main #servicios {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -970,7 +810,10 @@ footer {
     margin-right: auto;
     margin-bottom: 50px;
   }
-  .serviciosFig {
+  main #servicios .imgExperiencias {
+    text-align: center;
+  }
+  main #servicios .imgExperiencias .serviciosFig {
     margin: 25px auto;
   }
   #experiencias {
@@ -988,10 +831,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-  }
-  .imgExperiencias {
-    text-align: center;
-    font-family: 'Font Awesome 6 Brands';
   }
   #imgenCarta {
     height: auto;

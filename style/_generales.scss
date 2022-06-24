@@ -1,140 +1,39 @@
-$tablet: 768px;
-$desktop: 1024px;
+
 
 * {
     padding: 0;
     margin: 0;
 }
 
-header {
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 253);
+
+}
+
+h1 {
     color: black;
-    background-image: linear-gradient(grey, white);
-    width: 100fx;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    nav {
-        width: 100%;
-        margin-top: 10px;
-
-        ul {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-
-            li {
-                list-style: none;
-
-                a:hover {
-                    color: white;
-                    font-size: large;
-                    transform: scale(5);
-                    transition-property: all;
-                    transition-duration: 4s;
-                }
-
-            }
-
-        }
-
-    }
-
-    #logoHeader {
-        width: 100%;
-        text-align: center;
-    }
-}
-/*
-@media (min-width: $tablet) {
-
-    #grilla {
-        width: 100%;
-        height: 100vh;
-        display: grid;
-        grid-template-areas:
-            "header header"
-            "galeria galeria"
-            "main aside"
-            "footer footer";
-        grid-template-columns: 70% auto;
-        grid-template-rows: 120px 2fr 1fr 100px;
-    }
-
-    header {
-        color: black;
-        background-image: linear-gradient(grey, white);
-        height: 120px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        nav {
-            width: 49%;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-
-                li {
-                    list-style: none;
-
-                    a:hover {
-                        color: white;
-                        font-size: large;
-                        transform: scale(5);
-                        transition-property: all;
-                        transition-duration: 4s;
-                    }
-
-                }
-            }
-        }
-    }
-
-    #logoHeader {
-        width: 49%;
-
-    }
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 60px;
 
 }
 
-@media (min-width: $desktop) {
 
-    header {
-        color: black;
-        background-image: linear-gradient(grey, white);
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-
-        nav {
-            width: 49%;
-
-            ul {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-
-                li {
-                    list-style: none;
-
-                    a:hover {
-                        color: white;
-                        font-size: large;
-                        transform: scale(5);
-                        transition-property: all;
-                        transition-duration: 4s;
-                    }
-                }
-            }
-        }
-    }
-
-    #logoHeader {
-        width: 49%;
-    }
-
-}*/
+h2,
+h3,
+h4,
+h5 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+    font-style: italic;
+}
