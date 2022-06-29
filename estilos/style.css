@@ -32,7 +32,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 20px;
   color: black;
   font-weight: bold;
@@ -40,6 +40,31 @@ h5 {
   text-align: center;
   font-family: serif;
   font-style: italic;
+}
+
+.parrSalon {
+  font-weight: 400;
+}
+
+.accordion-body {
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.margin50 {
+  margin-top: 50px;
+}
+
+.margin100 {
+  margin-top: 100px;
+}
+
+.margin150 {
+  margin-top: 150px;
+}
+
+.margin200 {
+  margin-top: 200px;
 }
 
 * {
@@ -102,6 +127,65 @@ header nav ul li:hover {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  header {
+    height: 120px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  header nav {
+    width: 49%;
+  }
+  header nav ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header nav ul li {
+    list-style: none;
+  }
+  header nav ul li:hover {
+    color: white;
+    -webkit-transform: scale 5;
+            transform: scale 5;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 3s;
+            transition-duration: 3s;
+  }
+  #logoHeader {
+    width: 49%;
+  }
+}
+
+@media (min-width: 1024px) {
+  header nav ul {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header nav ul li {
+    list-style: none;
+  }
+  header nav ul li:hover {
+    color: white;
+    -webkit-transform: scale 5;
+            transform: scale 5;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 3s;
+            transition-duration: 3s;
+  }
+  #logoHeader {
+    width: 49%;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -109,7 +193,7 @@ header nav ul li:hover {
 
 .footerContainer {
   color: black;
-  font-weight: bold;
+  font-weight: lighter;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#dbd5d5), to(white));
   background-image: linear-gradient(#dbd5d5, white);
   width: 100%;
@@ -131,7 +215,16 @@ header nav ul li:hover {
   font-size: 12px;
 }
 
-.footerContainer .footerTexto .footerSocial {
+.footerContainer .footerCentral {
+  width: 29%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.footerContainer .footerSocial {
   width: 100%;
   gap: 20px;
   font-size: x-large;
@@ -139,44 +232,93 @@ header nav ul li:hover {
   margin-top: 10px;
 }
 
+.footerContainer .footerTitulos {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  font-family: serif;
+  font-style: italic;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footerContainer .parrFsocial {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.footerContainer p {
+  font-weight: lighter;
+}
+
 @media (min-width: 768px) {
   .footerContainer {
-    height: 60px;
+    height: 230px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
   .footerContainer .footerTexto {
-    width: 49%;
+    width: 33%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-right: 1px solid darkgrey;
+  }
+  .footerContainer .footerCentral {
+    width: 33%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-right: 1px solid darkgrey;
+  }
+  .footerContainer .footerSocial {
+    width: 33%;
+  }
+  .footerContainer .footerSocial .iconFooter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerContainer {
+    height: 230px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footerContainer .footerCentral {
+    width: 29%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     font-size: 15px;
     margin-bottom: 10px;
   }
-  .footerContainer .footerTexto .footerSocial {
-    width: 49%;
+  .footerContainer .footerSocial {
+    gap: 20px;
+    font-size: x-large;
+  }
+  .footerContainer .footerSocial .iconFooter {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     gap: 30px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footerContainer {
-    height: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .footerContainer .footerTexto .footerSocial {
-    gap: 20px;
-    font-size: x-large;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -218,8 +360,8 @@ main #menu {
 
 main #menuDeldia {
   color: black;
-  font-weight: bold;
   margin-top: 20px;
+  font-weight: lighter;
 }
 
 main #servicios {
@@ -265,7 +407,7 @@ figcaption {
   color: black;
   text-align: center;
   margin-top: 15px;
-  font-weight: bold;
+  font-weight: lighter;
 }
 
 .figcaptionStyle {
@@ -296,8 +438,26 @@ figcaption {
 
 .imgComidas img {
   width: 70%;
-  -webkit-box-shadow: 4px 2px 3px white;
-          box-shadow: 4px 2px 3px white;
+  -webkit-box-shadow: 4px 2px 3px #8c8c8c;
+          box-shadow: 4px 2px 3px #8c8c8c;
+}
+
+.button {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
 }
 
 /* ------------------------ Otra Sección ------------------------ */
@@ -344,11 +504,18 @@ figcaption {
   margin-right: auto;
 }
 
-.listaEventos {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.imgSalonesEventos {
+  width: 90%;
+  height: auto;
+}
+
+.parrafoEventos {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: lighter;
+  font-family: serif;
+  font-style: italic;
   font-size: 20px;
-  list-style-type: circle;
 }
 
 .figcaptionCarta {
@@ -359,39 +526,18 @@ figcaption {
   font-style: italic;
 }
 
+.carousel .carousel-inner .carousel-item {
+  height: 150px;
+}
+
+.carousel .carousel-inner .carousel-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 150px;
+}
+
 /* ------------------------ Footer ------------------------ */
-.footerContainer {
-  color: black;
-  font-weight: bold;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#dbd5d5), to(white));
-  background-image: linear-gradient(#dbd5d5, white);
-  width: 100%;
-  height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.footerTexto {
-  width: 100%;
-  font-size: 12px;
-}
-
-.footerSocial {
-  width: 100%;
-  gap: 20px;
-  font-size: x-large;
-  text-align: center;
-  margin-top: 10px;
-}
-
 /*Declarar areas*/
 header {
   -ms-grid-row: 1;
@@ -416,7 +562,7 @@ aside {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: aside;
-  background-color: #fab5cc;
+  background-color: #f5e1c8;
 }
 
 footer {
@@ -459,27 +605,6 @@ footer {
         grid-template-rows: 120px 2fr 1fr 100px;
   }
   /* ------------------------ Header ------------------------ */
-  header {
-    height: 120px;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  header nav {
-    width: 49%;
-  }
-  header nav ul {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  #logoHeader {
-    width: 49%;
-  }
   #imgLogo {
     width: 35%;
   }
@@ -506,7 +631,6 @@ footer {
   }
   #menuDeldia {
     color: black;
-    font-weight: bold;
     margin-top: 20px;
   }
   a {
@@ -515,12 +639,6 @@ footer {
     color: black;
   }
   p {
-    color: black;
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  figcaption {
     color: black;
     text-align: center;
     margin-top: 15px;
@@ -552,8 +670,8 @@ footer {
   }
   .imgComidas img {
     width: 100%;
-    -webkit-box-shadow: 4px 2px 3px white;
-            box-shadow: 4px 2px 3px white;
+    -webkit-box-shadow: 4px 2px 3px #8c8c8c;
+            box-shadow: 4px 2px 3px #8c8c8c;
   }
   /* ------------------------ Otra Sección ------------------------ */
   #dataExperiencia {
@@ -607,60 +725,31 @@ footer {
     margin-right: auto;
     margin-bottom: 50px;
   }
+  .parrafoEventos {
+    margin-top: 100px;
+    font-size: 25px;
+  }
   #imgenCarta {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 70%;
   }
+  .carousel .carousel-inner .carousel-item {
+    height: 250px;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 250px;
+  }
   /* ------------------------ Footer ------------------------ */
-  .footerContainer {
-    color: black;
-    font-weight: bold;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#dbd5d5), to(white));
-    background-image: linear-gradient(#dbd5d5, white);
-    width: 100%;
-    height: 60px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .footerTexto {
-    width: 49%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-  .footerSocial {
-    width: 49%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 30px;
-    font-size: x-large;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
 }
 
 /*DESKTOP*/
 /* ------------------------ Generales ------------------------ */
 @media (min-width: 1024px) {
   /* ------------------------ Header ------------------------ */
-  header nav ul {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #logoHeader {
-    width: 49%;
-  }
   /* ------------------------ Main ------------------------ */
   .container {
     margin-top: 30px;
@@ -687,7 +776,6 @@ footer {
   }
   #menuDeldia {
     color: black;
-    font-weight: bold;
     margin-top: 20px;
   }
   a {
@@ -696,12 +784,6 @@ footer {
     color: black;
   }
   p {
-    color: black;
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-  }
-  figcaption {
     color: black;
     text-align: center;
     margin-top: 15px;
@@ -730,24 +812,14 @@ footer {
     width: 200px;
     text-align: center;
   }
-  .imgComidas img {
-    width: 200px;
-  }
   #eventos {
     width: 100%;
     height: auto;
     -webkit-box-shadow: 4px 2px 3px black;
             box-shadow: 4px 2px 3px black;
   }
-  .parrafoEventos {
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-    font-family: serif;
-    font-style: italic;
-    font-size: 25px;
-  }
   .listaEventos {
+    width: 60%;
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 20px;
@@ -806,6 +878,7 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 800px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -828,6 +901,7 @@ footer {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 800px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -844,36 +918,16 @@ footer {
     margin-left: auto;
     margin-bottom: 30px;
   }
+  .carousel .carousel-inner .carousel-item {
+    height: 450px;
+  }
+  .carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 450px;
+  }
   /* ------------------------ Footer ------------------------ */
-  .footerContainer {
-    color: black;
-    font-weight: bold;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#dbd5d5), to(white));
-    background-image: linear-gradient(#dbd5d5, white);
-    height: 80px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .footerTexto {
-    width: 49%;
-    font-size: 15px;
-  }
-  .footerSocial {
-    width: 49%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    gap: 20px;
-    font-size: x-large;
-  }
   /*Declarar areas*/
   #grilla {
     width: 100%;
@@ -883,8 +937,8 @@ footer {
         grid-template-areas: "header header" "galeria galeria" "main aside" "footer footer";
     -ms-grid-columns: 75% auto;
         grid-template-columns: 75% auto;
-    -ms-grid-rows: 120px 2fr 1fr 100px;
-        grid-template-rows: 120px 2fr 1fr 100px;
+    -ms-grid-rows: 120px 2fr 1fr 230px;
+        grid-template-rows: 120px 2fr 1fr 230px;
   }
   header {
     -ms-grid-row: 1;
@@ -908,7 +962,7 @@ footer {
     -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: aside;
-    background-color: #fab5cc;
+    background-color: #f5e1c8;
   }
   footer {
     -ms-grid-row: 4;

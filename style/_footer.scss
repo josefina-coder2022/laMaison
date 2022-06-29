@@ -6,7 +6,7 @@
 
 .footerContainer {
     color: black;
-    font-weight: bold;
+    font-weight: lighter;
     background-image: linear-gradient(rgb(219, 213, 213), white);
     width: 100%;
     height: 80px;
@@ -17,60 +17,116 @@
     .footerTexto {
         width: 100%;
         font-size: 12px;
-
-        .footerSocial {
-            width: 100%;
-            gap: 20px;
-            font-size: x-large;
-            text-align: center;
-            margin-top: 10px;
-
-        }
+       
     }
 
+    .footerCentral {
+        width: 29%;
+        align-self: center;
+        font-size: 15px;
+        margin-bottom: 10px;
+        
+    }
+
+    .footerSocial {
+        width: 100%;
+        gap: 20px;
+        font-size: x-large;
+        text-align: center;
+        margin-top: 10px;
+         
+    }
+
+    .footerTitulos {
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        font-family: serif;
+        font-style: italic;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+      .parrFsocial {
+          font-size: 15px;
+          font-weight: lighter;
+
+      }
+
+      p{
+        font-weight: lighter;
+      }
 }
+
+
+
+
 
 @media (min-width: 768px) {
 
     .footerContainer {
-        height: 60px;
+        height: 230px;
         flex-direction: row;
 
-          .footerTexto {
-              width: 49%;
-              align-self: center;
-              font-size: 15px;
-              margin-bottom: 10px;
+        .footerTexto {
+            width: 33%;
+            align-self: center;
+            font-size: 15px;
+            margin-bottom: 10px;
+             border-right: 1px solid darkgrey;
+        }
 
-                 .footerSocial {
-                     width: 49%;
-                     display: flex;
-                     gap: 30px;
-                     justify-content: flex-end;
-                 }
+        .footerCentral {
+            width: 33%;
+            align-self: center;
+            font-size: 15px;
+            margin-bottom: 10px;
+            border-right: 1px solid darkgrey;
+        }
 
-          }
+        .footerSocial {
+            width: 33%;
 
+            .iconFooter {
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+            }
+        }
     }
- 
+
+
 }
 
 
 @media (min-width: 1024px) {
 
     .footerContainer {
-        height: 80px;
+        height: 230px;
         display: flex;
-        
-          .footerTexto {
 
-               .footerSocial {
-                   gap: 20px;
-                   font-size: x-large;
-               }
+        .footerCentral {
+            width: 29%;
+            align-self: center;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
 
-          }
+        .footerSocial {
+            gap: 20px;
+            font-size: x-large;
+
+            .iconFooter {
+                display: flex;
+                gap: 30px;
+                justify-content: center;
+            }
+        }
+
+
 
     }
-
 }
+
+      

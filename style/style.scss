@@ -57,8 +57,8 @@ main {
 
     #menuDeldia {
         color: black;
-        font-weight: bold;
         margin-top: 20px;
+        font-weight: lighter;
     }
 
     #servicios {
@@ -102,7 +102,7 @@ figcaption {
     color: black;
     text-align: center;
     margin-top: 15px;
-    font-weight: bold;
+    font-weight: lighter;
 
 }
 
@@ -117,6 +117,7 @@ figcaption {
     justify-content: center;
     align-items: center;
 
+
 }
 
 .imgComidas {
@@ -127,7 +128,26 @@ figcaption {
 
 .imgComidas img {
     width: 70%;
-    box-shadow: 4px 2px 3px white;
+    box-shadow: 4px 2px 3px #8c8c8c;
+}
+
+.button {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
 }
 
 
@@ -141,9 +161,6 @@ figcaption {
     flex-direction: row;
 }
 
-
-
-
 #experiencias {
     display: flex;
     flex-direction: column;
@@ -153,7 +170,6 @@ figcaption {
     margin-right: auto;
     margin-bottom: 50px;
 }
-
 
 .parrafoNosotros {
     text-align: center;
@@ -168,13 +184,21 @@ figcaption {
     margin-right: auto;
 }
 
-.listaEventos {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 20px;
-    list-style-type: circle;
-
+.imgSalonesEventos {
+    width: 90%;
+    height: auto;
 }
+
+
+.parrafoEventos {
+    text-align: center;
+    margin-top: 50px;
+    font-weight: lighter;
+    font-family: serif;
+    font-style: italic;
+    font-size: 20px;
+}
+
 
 .figcaptionCarta {
     font-family: serif;
@@ -182,6 +206,17 @@ figcaption {
     font-size: 35px;
     margin-top: 30px;
     font-style: italic;
+}
+
+.carousel .carousel-inner .carousel-item {
+    height: 150px;
+}
+
+.carousel .carousel-inner .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 150px;
 }
 
 /* ------------------------ Footer ------------------------ */
@@ -205,9 +240,7 @@ main {
 
 aside {
     grid-area: aside;
-    background-color: rgb(250, 181, 204);
-
-
+    background-color: #f5e1c8;
 }
 
 footer {
@@ -257,24 +290,8 @@ footer {
 
     /* ------------------------ Header ------------------------ */
 
-    header {
-        height: 120px;
-        flex-direction: row;
 
-        nav {
-            width: 49%;
 
-            ul {
-                flex-direction: row;
-                justify-content: space-around;
-            }
-        }
-
-    }
-
-    #logoHeader {
-        width: 49%;
-    }
 
     #imgLogo {
         width: 35%;
@@ -310,7 +327,6 @@ footer {
 
     #menuDeldia {
         color: black;
-        font-weight: bold;
         margin-top: 20px;
     }
 
@@ -322,15 +338,6 @@ footer {
     }
 
     p {
-        color: black;
-        text-align: center;
-        margin-top: 15px;
-        font-weight: bold;
-
-    }
-
-    figcaption {
-
         color: black;
         text-align: center;
         margin-top: 15px;
@@ -360,7 +367,7 @@ footer {
 
     .imgComidas img {
         width: 100%;
-        box-shadow: 4px 2px 3px white;
+        box-shadow: 4px 2px 3px #8c8c8c;
     }
 
     /* ------------------------ Otra Sección ------------------------ */
@@ -405,12 +412,28 @@ footer {
         margin-bottom: 50px;
     }
 
+    .parrafoEventos {
+        margin-top: 100px;
+        font-size: 25px;
+    }
+
 
 
     #imgenCarta {
         margin-top: 30px;
         margin-bottom: 30px;
         width: 70%;
+    }
+
+    .carousel .carousel-inner .carousel-item {
+        height: 250px;
+    }
+
+    .carousel .carousel-inner .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 250px;
     }
 
 
@@ -428,18 +451,7 @@ footer {
 
     /* ------------------------ Header ------------------------ */
 
-    header {
-        nav {
-            ul {
-                justify-content: space-between;
-            }
 
-        }
-    }
-
-    #logoHeader {
-        width: 49%;
-    }
 
     /* ------------------------ Main ------------------------ */
 
@@ -476,7 +488,6 @@ footer {
 
     #menuDeldia {
         color: black;
-        font-weight: bold;
         margin-top: 20px;
     }
 
@@ -488,15 +499,6 @@ footer {
     }
 
     p {
-        color: black;
-        text-align: center;
-        margin-top: 15px;
-        font-weight: bold;
-
-    }
-
-    figcaption {
-
         color: black;
         text-align: center;
         margin-top: 15px;
@@ -522,9 +524,7 @@ footer {
         text-align: center;
     }
 
-    .imgComidas img {
-        width: 200px;
-    }
+
 
     #eventos {
         width: 100%;
@@ -533,23 +533,14 @@ footer {
 
     }
 
-    .parrafoEventos {
-        text-align: center;
-        margin-top: 15px;
-        font-weight: bold;
-        font-family: serif;
-        font-style: italic;
-        font-size: 25px;
-    }
-
     .listaEventos {
+        width: 60%;
         margin-top: 30px;
         margin-bottom: 30px;
         font-size: 20px;
         list-style-type: circle;
 
     }
-
 
     #imagenNosotros {
         width: 100%;
@@ -580,9 +571,7 @@ footer {
     }
 
     .bordeLista {
-
         padding: 10px;
-
     }
 
 
@@ -604,6 +593,7 @@ footer {
             flex-direction: row;
             justify-content: space-between;
             width: 800px;
+            margin-top: 50px;
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 50px;
@@ -625,6 +615,7 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         width: 800px;
+        margin-top: 50px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 50px;
@@ -646,6 +637,17 @@ footer {
         margin-bottom: 30px;
     }
 
+    .carousel .carousel-inner .carousel-item {
+        height: 450px;
+    }
+
+    .carousel .carousel-inner .carousel-item img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        min-height: 450px;
+    }
+
 
     /* ------------------------ Footer ------------------------ */
 
@@ -663,7 +665,7 @@ footer {
             "main aside"
             "footer footer";
         grid-template-columns: 75% auto;
-        grid-template-rows: 120px 2fr 1fr 100px;
+        grid-template-rows: 120px 2fr 1fr 230px;
     }
 
     header {
@@ -681,10 +683,8 @@ footer {
 
     aside {
         grid-area: aside;
-        background-color: rgb(250, 181, 204);
-
+        background-color: #f5e1c8;
     }
-
 
     footer {
         grid-area: footer;
