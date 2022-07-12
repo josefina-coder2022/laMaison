@@ -503,6 +503,7 @@ header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: header;
+  height: 280px;
 }
 
 section#galeria {
@@ -539,8 +540,8 @@ footer {
       grid-template-areas: "header" "galeria" "main" "aside" "footer";
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
-  -ms-grid-rows: 240px 1fr 1fr 1fr 100px;
-      grid-template-rows: 240px 1fr 1fr 1fr 100px;
+  -ms-grid-rows: 280px 1fr 1fr 1fr 100px;
+      grid-template-rows: 280px 1fr 1fr 1fr 100px;
 }
 
 #formularioContainer {
@@ -548,7 +549,6 @@ footer {
   margin-top: 60px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 30px;
 }
 
 /*MOBILE - TABLET*/
@@ -563,6 +563,9 @@ footer {
         grid-template-columns: 70% auto;
     -ms-grid-rows: 120px 2fr 1fr 100px;
         grid-template-rows: 120px 2fr 1fr 100px;
+  }
+  header {
+    height: 120px;
   }
   /* ------------------------ Header ------------------------ */
   #imgLogo {

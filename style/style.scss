@@ -212,6 +212,7 @@ figcaption {
 
 header {
     grid-area: header;
+    height: 280px;
 }
 
 section#galeria {
@@ -243,7 +244,7 @@ footer {
         "aside"
         "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 240px 1fr 1fr 1fr 100px;
+    grid-template-rows: 280px 1fr 1fr 1fr 100px;
 }
 
 #formularioContainer {
@@ -251,7 +252,7 @@ footer {
     margin-top: 60px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 30px;
+  
 }
 
 
@@ -271,6 +272,10 @@ footer {
             "footer footer";
         grid-template-columns: 70% auto;
         grid-template-rows: 120px 2fr 1fr 100px;
+    }
+
+    header {
+        height: 120px;
     }
 
     /* ------------------------ Header ------------------------ */
